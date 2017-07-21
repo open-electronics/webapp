@@ -69,7 +69,6 @@ void loop() {
   checkSerial();
   checkSensors();
   manageTimers();
-  delay(1);
   
 }
 
@@ -141,7 +140,6 @@ void manageTimers() {
 
   for(int i=0;i<4;i++) {
     if(AutoTimerActive[i] == 1) {
-      AutoTimer[i]++;
       if(millis() >= AutoTimer[i] + (AutoRelaySeconds[i] * 1000) ) {
         AutoTimer[i] = 0;
         AutoTimerActive[i] = 0;
