@@ -9,7 +9,7 @@
 - Connect your Raspberry Pi 3 to internet
 - Login via SSH
 - cd /home/pi
-- Download this repository from GitHub
+- sudo git clone https://github.com/open-electronics/webapp
 - cd webapp/utils
 - sudo chmod a+x install.sh
 - sudo bash install.sh
