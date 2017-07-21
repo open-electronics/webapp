@@ -12,6 +12,7 @@ Arduino UNO is connected with 4 IR sensors and 4 relays.
 - Connect your Raspberry Pi 3 to internet
 - Login via SSH
 - cd /home/pi
+- sudo apt-get install git
 - sudo git clone https://github.com/open-electronics/webapp.git
 - cd webapp/utils
 - sudo chmod a+x install.sh
