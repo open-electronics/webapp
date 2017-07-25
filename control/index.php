@@ -60,12 +60,12 @@
 						var sensor = response[s]["Sensor"];
 						$("#RelayName_"+id).html("[" + id + "] " + name);
 						$("#Relay_"+id).val(status);
-						$("#Relay_"+id).slider("refresh");
 						if(sensor != "") {
 							$("#Relay_"+response[s]["ID"]).slider("disable");
 						} else {
 							$("#Relay_"+response[s]["ID"]).slider("enable");
 						}
+						$("#Relay_"+id).slider("refresh");
 					}
 				}, "json");
 			}
